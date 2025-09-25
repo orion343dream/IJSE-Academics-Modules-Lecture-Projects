@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 11</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+        flex-direction: column;
+      }
+      .box:hover {
+        cursor: pointer;
+        width: 200px;
+        font-size: 24px;
+        transition: width 1s ease-in-out;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+      }
+
+      p {
+        opacity: 0;
+        margin: 0;
+        font-size: 0;
+      }
+
+      .box:hover p {
+        opacity: 100%;
+        transition: 1s;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        😁
+        <p>Laughing</p>
+      </div>
+      <div class="box">
+        😭
+        <p>Crying</p>
+      </div>
+      <div class="box">
+        😍
+        <p>Love</p>
+      </div>
+      <div class="box">
+        🤭
+        <p>Shy</p>
+      </div>
+    </div>
+  </body>
+</html>

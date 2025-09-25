@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #eef2f7;
+            font-family: "Times New Roman", serif;
+        }
+
+        .form-container, .table-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            border-left: 5px solid #28a745;
+        }
+
+        .table-container {
+            border-left: 5px solid #007bff;
+        }
+
+        input, select {
+            border: 2px solid #ced4da;
+            border-radius: 10px;
+            padding: 0.75rem;
+        }
+
+        input:focus, select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .custom-file-upload {
+            border: 2px dashed #007bff;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #f8fbff;
+            transition: all 0.3s;
+        }
+
+        .custom-file-upload:hover {
+            border-color: #0056b3;
+            background-color: #e3f2fd;
+        }
+
+        .profile-preview {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-radius: 12px;
+            padding: 0.75rem 1.5rem;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-radius: 12px;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table-light th {
+            background-color: #d6e9ff;
+        }
+    </style>
+</head>
+<body class="py-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+            <div class="form-container">
+                <h2 class="text-center text-success mb-4">Customer Management</h2>
+                <form id="customerForm" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="id" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control" id="id" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age">
+                    </div>
+                    <div class="col-12">
+                        <label for="profile-pic" class="form-label">Profile Picture</label>
+                        <div class="custom-file-upload" id="dropZone">
+                            <i class="bi bi-cloud-upload fs-3 text-primary"></i>
+                            <p class="mb-0">Drop your image here or click to browse</p>
+                            <input type="file" id="profile-pic" class="d-none" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex gap-2 justify-content-end">
+                        <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i> Clear</button>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Save Customer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container">
+                <h3 class="text-primary mb-4">Customer List</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                        <tr>
+                            <th>Profile</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customerTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>mj
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/customer.js"></script>
+
+</body>
+</html>

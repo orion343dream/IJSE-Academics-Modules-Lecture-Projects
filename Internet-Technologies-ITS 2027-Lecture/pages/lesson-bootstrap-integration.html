@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - Bootstrap Integration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <h1>Bootstrap Integration</h1> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <button type="button" class="btn btn-success">Success</button>
+
+    <!-- <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button> -->
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/assets/images/anthurium.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/images/carnation.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/images/jesmin.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img src="/assets/images/computer.jpeg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <br /><br />
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-danger">Left</button>
+      <button type="button" class="btn btn-warning">Middle</button>
+      <button type="button" class="btn btn-success">Right</button>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert with
+      <a href="#" class="alert-link">an example link</a>. Give it a click if you
+      like.
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert with
+      <a href="#" class="alert-link">an example link</a>. Give it a click if you
+      like.
+    </div>
+
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+    </div>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Months
+      </button>
+      <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button">January</button></li>
+        <li><button class="dropdown-item" type="button">February</button></li>
+        <li><button class="dropdown-item" type="button">March</button></li>
+        <li><button class="dropdown-item" type="button">April</button></li>
+        <li><button class="dropdown-item" type="button">May</button></li>
+        <li><button class="dropdown-item" type="button">June</button></li>
+        <li><button class="dropdown-item" type="button">July</button></li>
+        <li><button class="dropdown-item" type="button">August</button></li>
+        <li><button class="dropdown-item" type="button">September</button></li>
+        <li><button class="dropdown-item" type="button">October</button></li>
+        <li><button class="dropdown-item" type="button">November</button></li>
+        <li><button class="dropdown-item" type="button">December</button></li>
+      </ul>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+    molestiae soluta necessitatibus asperiores accusamus, ea eius alias culpa
+    sapiente dolorem! Aliquid asperiores nisi in sit ab possimus dolorum,
+    deserunt nobis, doloremque unde enim maiores animi similique ad inventore
+    sed nostrum corporis qui velit dolore necessitatibus soluta, adipisci id!
+    Laborum laudantium praesentium temporibus accusantium earum blanditiis minus
+    molestias, quis iste magni explicabo dolores facere quaerat minima tenetur
+    aperiam sint vero consectetur aut! Velit aliquam asperiores consequuntur,
+    temporibus illo eligendi? Excepturi quia dolorum quis vel consectetur
+    pariatur autem laudantium blanditiis praesentium magni! Numquam aliquam
+    sequi iusto sapiente dolorem similique maxime at sit laborum, quibusdam
+    omnis atque itaque amet autem, sunt voluptatem nesciunt quaerat quos a velit
+    facilis natus rerum. Labore itaque sed dolorem tenetur quas! Porro
+    reprehenderit cum necessitatibus nostrum blanditiis eveniet accusantium
+    exercitationem dolore dignissimos, pariatur sit iure ducimus libero rem
+    adipisci sapiente est veniam temporibus. Commodi, deserunt, debitis beatae
+    dolorum hic ipsam quod reprehenderit, cum doloribus molestiae fugiat
+    tempora. Eveniet perferendis minima delectus voluptates asperiores voluptate
+    optio perspiciatis nihil? Ipsa pariatur dignissimos suscipit at, eveniet
+    facilis illo laudantium molestiae repellat eius vitae cumque consequuntur
+    praesentium hic quibusdam ratione, voluptatum eos. Sunt esse rerum dolorem
+    neque, ab ducimus, dolorum eligendi quia alias voluptatum tempore? Vero,
+    illum iusto, itaque aut magni quia nostrum sunt dolorum enim non sapiente
+    voluptatem iste commodi beatae natus eos dicta incidunt! Fuga necessitatibus
+    illum aspernatur, voluptatem beatae ab est. Magnam consequuntur sapiente
+    repellat odio, quibusdam expedita aut velit minus, illo ut totam sint
+    deserunt suscipit obcaecati ipsa?
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

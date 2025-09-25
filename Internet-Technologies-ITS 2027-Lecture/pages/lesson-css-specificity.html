@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Specificity</title>
+    <style>
+      p {
+        background-color: red;
+      }
+
+      .content {
+        background-color: blue;
+      }
+
+      #main-content {
+        background-color: green;
+      }
+
+      div p {
+        background-color: yellow;
+      }
+
+      div .content {
+        background-color: aqua;
+      }
+
+      div #main-content {
+        background-color: lightgreen;
+      }
+
+      #card #main-content {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container" id="card">
+      <p class="content" id="main-content" style="background-color: blueviolet">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+        tempore corrupti laboriosam fugit quia aperiam. Quia impedit totam atque
+        maxime odio dolore porro dolores nesciunt assumenda! Dolorum nulla
+        maiores quas officiis debitis qui, assumenda asperiores accusamus in
+        voluptate voluptatem temporibus molestias libero, est magnam provident
+        dicta quam corrupti omnis reiciendis?
+      </p>
+    </div>
+  </body>
+</html>

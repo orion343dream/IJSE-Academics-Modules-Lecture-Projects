@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  background-image: url(/assets/images/programmer-image1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgb(0, 132, 255);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  color: rgb(204, 204, 204);
+  border: 5px solid gray;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(180, 46, 46, 0.1);
+  width: 45%;
+}
+
+.box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box ul,
+.box ol {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 5px solid gray; */
+}

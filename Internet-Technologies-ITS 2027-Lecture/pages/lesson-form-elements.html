@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - Form elements</title>
+  </head>
+  <body>
+    <h1>Form elements</h1>
+    <!-- Lable - This is used to define a label an -->
+    <strong>================1. Lable=================</strong>
+    <br />
+    <br />
+    <label for="username">User Name: </label>
+
+    <hr />
+    <br />
+    <!-- input - This is used to get input get the user -->
+    <strong>================2. Input=================</strong>
+    <br /><br />
+    <p>-----------Text input-------------</p>
+    <label for="firstname">First Name:</label>
+    <input type="text" placeholder="Enter your first name" maxlength="6" />
+    <br />
+    <br />
+
+    <p>-----------Number input-------------</p>
+    <label for="firstname">Age:</label>
+    <input type="number" value="22" />
+    <br />
+    <br />
+
+    <p>-----------Password input-------------</p>
+    <label for="password">Password:</label>
+    <input type="password" />
+    <br />
+    <br />
+
+    <p>-----------Date input-------------</p>
+    <label for="date">Date:</label>
+    <input type="date" />
+    <br />
+    <br />
+
+    <p>-----------Check Box-------------</p>
+    <label for="remember">Remember Me</label>
+    <input type="checkbox" name="remember" />
+    <br />
+    <br />
+
+    <p>-----------File upload-------------</p>
+    <input type="file" name="file" />
+    <hr />
+    <br />
+
+    <!-- textarea -->
+    <strong>================3. Text Area=================</strong>
+    <br /><br />
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Enter your message here"
+      cols="30"
+      rows="8"
+    ></textarea>
+    <br />
+    <br />
+
+    <!-- button -->
+    <strong>================4. Button =================</strong>
+    <br /><br />
+    <button type="button" onclick="alert('Hellow World')">Click Me</button>
+    <button type="submit">Submit</button>
+    <br />
+    <br />
+
+    <!-- select -->
+    <strong>================5. Select =================</strong>
+    <br />
+    <br />
+    <select name="tecnology" id="tech">
+      <option value="java">Java</option>
+      <option value="javaScript">JavaScript</option>
+      <option value="python">Python</option>
+    </select>
+    <br />
+    <br />
+
+    <!-- fields set and legend -->
+    <strong>================6. Fields set and legend =================</strong>
+    <br />
+    <br />
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lname">Last Name: </label>
+      <input type="text" id="lname" name="lname" />
+    </fieldset>
+    <br />
+    <br />
+
+    <!-- form - This is used to create a form user inputs
+     * action - Specifics where to send the form data-->
+
+    <strong>================7. Form =================</strong>
+    <form action="/sumit-form" method="post">
+      <label for="firstname">First Name: </label>
+      <input type="text" id="firstname" name="firstname" required />
+      <br />
+      <br />
+
+      <label for="lastname">Last Name: </label>
+      <input type="text" id="lastname" name="lastname" required />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

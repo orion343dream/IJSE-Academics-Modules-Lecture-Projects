@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 15</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: gray;
+      }
+      #logo {
+        width: 50px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        margin-right: 8px;
+      }
+      .logo-container {
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: rgb(56, 49, 49);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      nav > ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav > ul > li {
+        margin: 0 30px;
+      }
+
+      nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .fa-solid {
+        display: none;
+      }
+      #hero-section {
+        width: 100%;
+        display: flex;
+        margin-top: 84px;
+      }
+
+      #hero-img {
+        width: 50%;
+      }
+      #hero-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #social-media-section img {
+        width: 32px;
+        height: 32px;
+      }
+
+      #more-button {
+        background-color: brown;
+        color: white;
+        border-radius: 12px;
+        height: 50px;
+        width: 50;
+      }
+
+      #social-media-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin: 0 20px;
+      }
+
+      .menu-panel {
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.4s ease;
+      }
+
+      .menu-panel ul {
+        list-style: none;
+        padding: 50px 20px;
+      }
+
+      .menu-panel ul li {
+        margin-bottom: 20px;
+      }
+
+      .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .close-button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+
+      @media screen and (max-width: 576px) {
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        h3 {
+          display: none;
+        }
+        ul li a {
+          display: none;
+        }
+        .fa-solid {
+          display: block;
+          margin-right: 16px;
+        }
+        .burgur {
+          display: block;
+        }
+        .menu-panel.active {
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <img id="logo" src="/assets/images/Achini.jpeg" alt="logo" />
+        <h3>Achini Pramodhya</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+        <i id="burger" class="fa-solid fa-bars"></i>
+      </nav>
+    </header>
+
+    <div id="menu-panel-id" class="menu-panel">
+      <button class="close-button" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </div>
+
+    <section id="hero-section">
+      <div id="hero-content">
+        <h1>Hey There !!! Welcome to my portfolio</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+          nihil corporis iusto facilis esse tempore, ipsum harum perspiciatis
+          id! Cupiditate quis ut aliquid excepturi. Ab quasi eum quod nulla
+          ipsa, explicabo quisquam officiis recusandae earum iusto architecto
+          perspiciatis? Magni minima doloremque iure architecto nostrum
+          perspiciatis eveniet voluptate ipsum, iste reprehenderit.
+        </p>
+        <button id="more-button">More Info</button>
+        <div id="social-media-section">
+          <img src="/assets/images/facebook.png" alt="fb" />
+          <img src="/assets/images/linkedin.png" alt="linkedin" />
+          <img src="/assets/images/github.png" alt="github" />
+          <img src="/assets/images/youtube.png" alt="yt" />
+        </div>
+      </div>
+      <img id="hero-img" src="/assets/images/Achini.jpeg" alt="img" />
+    </section>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

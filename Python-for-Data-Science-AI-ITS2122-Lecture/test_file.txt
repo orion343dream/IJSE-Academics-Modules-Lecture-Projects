@@ -1,0 +1,4 @@
+This is new
+writelines() method
+Hello World.
+Hello World.

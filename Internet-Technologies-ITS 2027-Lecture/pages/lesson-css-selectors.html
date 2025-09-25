@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Selectors</title>
+    <style>
+      /* ============ 1. Element Selector ============== */
+      h2 {
+        color: red;
+      }
+
+      /* ============= 2. Class Selector ================== */
+      .text {
+        color: green;
+      }
+
+      .heading {
+        color: blue;
+      }
+
+      /* ============= 3. ID Selector ================== */
+      #main-paraghraph {
+        color: purple;
+      }
+
+      /* ============= 4. Attribute Selector ================== */
+      a[target="_blank"] {
+        color: brown;
+      }
+
+      /* ============= 5. Descendant Selector ================== */
+      div p {
+        font-style: italic;
+      }
+
+      /* ============= 6. Child Selector ================== */
+      ul > li {
+        color: blue;
+        list-style-type: square;
+      }
+
+      /* ============= 7. Adjacent Sibling Selector ================== */
+      h2 + p {
+        color: chartreuse;
+      }
+
+      /* ============= 8. General Sibling Selector ================== */
+      /* h1 ~ p {
+        color: aqua;
+      } */
+
+      /* ============= 9. Pseudo Class Selector ================== */
+      li:first-child {
+        color: red;
+      }
+      li:last-child {
+        color: green;
+      }
+
+      li:nth-child(2) {
+        color: yellow;
+      }
+
+      li:nth-child(odd) {
+        color: red;
+      }
+
+      li:nth-child(even) {
+        color: blue;
+      }
+
+      ul:hover {
+        background-color: antiquewhite;
+      }
+
+      p:hover {
+        background-color: aquamarine;
+      }
+
+      /* ============= 10. Pseudo Element Selector ================== */
+
+      p::first-letter {
+        color: blue;
+        font-size: 32px;
+      }
+
+      p::first-line {
+        color: brown;
+      }
+
+      p::before {
+        color: blue;
+        content: "Before";
+      }
+
+      p::after {
+        color: blueviolet;
+        content: "After";
+      }
+
+      /* ============= 11. Grouping Selector(,) ================== */
+      h1,
+      h2,
+      h3 {
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    <b>============= 1. Element Selector ==================</b>
+    <h2>Hello World!</h2>
+    <h3>Hello</h3>
+    <h2>Hiii!!</h2>
+
+    <b>============= 2. Class Selector ==================</b>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nostrum,
+      quo eveniet nobis molestias officia amet odit quia dicta modi itaque
+      placeat, cumque accusantium repellendus. Odit harum eos numquam explicabo.
+    </p>
+
+    <h3 class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem?
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+      quisquam, exercitationem excepturi necessitatibus in suscipit?
+    </p>
+
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+    <h4 class="heading">Heading 4</h4>
+    <h5 class="heading">Heading 5</h5>
+    <h6 class="heading">Heading 6</h6>
+
+    <b>============= 3. ID Selector ==================</b>
+    <p id="main-paraghraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, in libero ex
+      distinctio, recusandae suscipit rerum excepturi, doloremque culpa dolores
+      quas laudantium numquam deserunt voluptates.
+    </p>
+
+    <b>============= 4. Attribute Selector ==================</b>
+    <br />
+    <a href="https:www.google.com" target="_blank">Google</a>
+    <br />
+    <br />
+
+    <b>============= 5. Descendant Selector (space)==================</b>
+
+    <p>Hey There!!!</p>
+
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+
+      <b>============= 6. Child Selector(>) ==================</b>
+      <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <b>============= 7. Adjacent Sibling Selector (+)==================</b>
+    <h2>Adjacent</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    <b>============= 8. General Sibling Selector(~) ==================</b>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <b>============= 9. Pseudo Class Selector ==================</b>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nulla vitae
+      assumenda eos atque quidem, facere eaque! Obcaecati voluptatum officiis,
+      iusto saepe illo veniam tempore molestiae id quia deleniti voluptatem?
+    </p>
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <b>============= 10. Pseudo Element Selector ==================</b>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id eveniet
+      assumenda excepturi omnis eaque ea commodi maiores quod vitae pariatur
+      laudantium eligendi impedit harum, sit totam quisquam reprehenderit quis.
+    </p>
+
+    <b>============= 11. Grouping Selector(,) ==================</b>
+
+    <h1>Heading 01</h1>
+    <h2>Heading 02</h2>
+    <h3>Heading 03</h3>
+  </body>
+</html>

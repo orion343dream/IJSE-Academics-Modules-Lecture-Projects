@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 12</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        animation: go-around 5s linear infinite;
+      }
+
+      @keyframes go-around {
+        0% {
+          transform: translateX(0);
+        }
+
+        25% {
+          transform: translateX(calc(100vw - 100px)) rotate(180deg);
+          /* transform: rotate(180deg);  */
+          border-radius: 20%;
+        }
+
+        50% {
+          transform: translate(calc(100vw - 100px), calc(100vh - 100px))
+            rotate(360deg);
+          /* transform: rotate(360deg); */
+          border-radius: 30%;
+        }
+
+        75% {
+          transform: translateY(calc(100vh - 100px)) rotate(180deg);
+          /* transform: rotate(180deg); */
+          border-radius: 40%;
+        }
+
+        100% {
+          transform: translateX(0);
+          /* transform: rotate(0deg); */
+          border-radius: 50%;
+        }
+        from {
+          background-color: aqua;
+        }
+        to {
+          background-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Animation</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* animation-name: down-up;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 2;
+        animation-delay: 0s; */
+
+        /* animation: down-up 2s linear infinite 0s; */
+
+        animation: square 5s linear infinite;
+      }
+
+      @keyframes square {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: green;
+        }
+      }
+
+      /* @keyframes down-up {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(200px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

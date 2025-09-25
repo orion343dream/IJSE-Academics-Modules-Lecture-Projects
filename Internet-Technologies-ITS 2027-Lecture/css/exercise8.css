@@ -1,0 +1,57 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 2500px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+header {
+  height: 85px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(104, 100, 100);
+  box-shadow: 0 -8px 26px black;
+  padding: 0 20px;
+  margin: -8px -8px 0 -8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-left: 30px;
+  margin-right: 450px;
+}
+
+ul {
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+ul li {
+  display: inline-flex;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}

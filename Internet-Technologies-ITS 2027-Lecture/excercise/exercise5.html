@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+  </head>
+  <body>
+    <h1>Student Form</h1>
+
+    <form action="/index.html" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="text">Name:</label>
+        <input type="name" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="text">Phone:</label>
+        <input
+          type="phone number"
+          id="phone number"
+          name="phone number"
+          maxlength="10"
+          required
+        />
+
+        <br />
+
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" />
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="remember">Subscribe to newsletter</label>
+        <input type="checkbox" name="remember" />
+
+        <select name="labguage" id="lang">
+          <option value="english">English</option>
+          <option value="sinhala">Sinhala</option>
+          <option value="tamil">Tamil</option>
+        </select>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message"
+          cols="70"
+          rows="4"
+        ></textarea>
+      </fieldset>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
